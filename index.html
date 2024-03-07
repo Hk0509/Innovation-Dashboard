@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- sidebar -->
+    <div class="sidebar">
+
+      <div id="Profile">
+        <div><img src="images/logo.webp" alt="logo" class="logo">
+          <p class="sideHeading">INC</p>
+          <p class="sideSubHeading">InnovationHub</p>
+        </div>
+
+        <span><img src="images/currUser.jpeg" alt="user-logo" class="user-logo"></span>
+      </div>
+
+      <div class="side-content">
+        <ul class="Team">
+          <button>
+            <li><a href="#"><i class="fa-brands fa-digital-ocean"></i> Digital Team</a></li>
+          </button>
+          <button>
+            <li><a href="#"><i class="fa-solid fa-bullhorn"></i> Marketing Team</a></li>
+          </button>
+          <button>
+            <li><a href="#"><i class="fa-solid fa-code"></i> Development Team</a></li>
+          </button>
+        </ul>
+        <button class="createTask">
+          <p href="#"><i class="fa-regular fa-square-plus"></i> Create a team</p>
+        </button>
+
+        <p class="folderTxt"><span>FOLDER</span><Span><i class="fa-solid fa-plus"></i></Span></p>
+
+        <div class="folder">
+
+          <!-- products dropDown -->
+
+          <button id="headBtn">Products <i class="fa fa-caret-down"></i></button>
+
+          <ul id="btnElement" style="display: block;">
+            <li><a href="#">Roadmap</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Performance</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Analytics</a></li>
+
+            <button class="createTask">
+              <p><i class="fa-regular fa-square-plus"></i> Add new sub</p>
+            </button>
+          </ul>
+
+          <!-- sales dropDown -->
+
+          <button id="headBtn1">Sales <i class="fa fa-caret-down"></i></button>
+
+          <ul id="btnElement1" style="display: none;">
+            <li><a href="#">Roadmap</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Performance</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Analytics</a></li>
+
+            <button class="createTask">
+              <p><i class="fa-regular fa-square-plus"></i> Add num tab</p>
+            </button>
+          </ul>
+
+
+          <!-- design dropDown -->
+
+          <button id="headBtn2">Design <i class="fa fa-caret-down"></i></button>
+
+          <ul id="btnElement2" style="display: none;">
+            <li><a href="#">Roadmap</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Performance</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Analytics</a></li>
+
+            <button class="createTask">
+              <p><i class="fa-regular fa-square-plus"></i> Add num tab</p>
+            </button>
+          </ul>
+
+          <!-- office dropDown -->
+
+          <button id="headBtn3">Office <i class="fa fa-caret-down"></i></button>
+
+          <ul id="btnElement3" style="display: none;">
+            <li><a href="#">Roadmap</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Performance</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Analytics</a></li>
+
+            <button class="createTask">
+              <p><i class="fa-regular fa-square-plus"></i> Add num tab</p>
+            </button>
+          </ul>
+
+          <!-- legal dropDown -->
+
+          <button id="headBtn4">Legal <i class="fa fa-caret-down"></i></button>
+
+          <ul id="btnElement4" style="display: none;">
+            <li><a href="#">Roadmap</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Performance</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Analytics</a></li>
+
+            <button class="createTask">
+              <p><i class="fa-regular fa-square-plus"></i> Add num tab</p>
+            </button>
+          </ul>
+
+          <!-- Footor -->
+        </div>
+
+        <div class="fixed-section">
+          <ul class="notice status-child">
+            <li>
+              <button id="inviteTeam">
+                <a href="#"><i class="fa-solid fa-user-plus"></i> Invite Teammates</a>
+              </button>
+            </li>
+            <li>
+              <button id="help">
+                <a href="#"><i class="fa-regular fa-circle-question"></i> Help and First Steps</a>
+              </button>
+            </li>
+            <li>
+              <div class="billing">
+                <p>7 Days left on trial</p>
+                <span class="addBilling">
+                  <button><a href="#">Add billing</a></button>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main -->
+
+    <div class="main-content">
+      <header>
+        <div class="header">
+          <h3>Products</h3>
+          <div class="Search-box">
+            <form id="searchForm" class="Search-tab">
+              <i class="fa fa-search"></i>
+              <input type="search" id="searchInput" required class="search" placeholder="Brand Name">
+            </form>
+            <div class="sideIcon">
+              <i class="fa-regular fa-comments chat"></i>
+              <i class="fa-solid fa-gear setting"></i>
+            </div>
+          </div>
+      </header>
+
+      <div class="main-container">
+        <div class="category-Item"></div>
+        <div class="left-category">
+          <span><button><i class="fa-brands fa-staylinked"></i> All brands <i
+                class="fa-solid fa-caret-down"></i></button></span>
+          <span><button>Desk <i class="fa-solid fa-caret-down"></i></button></span>
+          <span><button>Tags <i class="fa-solid fa-caret-down"></i></button></span>
+          <span><button id="sortButton"><i class="fa-solid fa-arrow-down-wide-short"></i> Sort</button></span>
+          <span class="dropdown">
+            <button><i class="fa-solid fa-filter"></i> Filter</button>
+            <div class="dropdown-options">
+              <div class="option-dropdown">
+                <a href="#" class="option">Category</a>
+                <div class="sub-options">
+                  <a href="#">Automation</a>
+                  <a href="#">E-Commerce</a>
+                  <a href="#">B2B</a>
+                  <a href="#">B2C</a>
+                  <a href="#">Publishing</a>
+                  <a href="#">Web Services</a>
+                </div>
+              </div>
+              <div class="option-dropdown">
+                <a href="#" class="option">Tags</a>
+                <div class="sub-options">
+                  <a href="#">#DigitalTransformation</a>
+                  <a href="#">#OnlineShopping</a>
+                  <a href="#">#UX</a>
+                  <a href="#">#B2CMarket</a>
+                  <a href="#">#RentalIT</a>
+                  <a href="#">#Omnisend</a>
+                  <a href="#">#SearchFinance</a>
+                </div>
+              </div>
+            </div>
+          </span>
+          
+          
+        </div>
+        <div class="right-category">
+          <span><button><i class="fa-solid fa-headset"></i> Meeting</button></span>
+          <span class="dropdown">
+            <button id="importExportBtn"><i class="fa-solid fa-cloud-arrow-up"></i> Import/Export</button>
+            <div class="dropdown-options" id="importExportOptions">
+              <div class="option" id="importOption">Import</div>
+              <div class="option" id="exportOption">Export</div>
+            </div>
+          </span>
+        </div>
+
+        <div class="tableData">
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th class = "heading">Brand</th>
+                <th class="heading">Description</th>
+                <th class="heading">Member</th>
+                <th class = "heading">Category</th>
+                <th class="heading">Tags</th>
+                <th class="heading">Next Meeting</th>
+                <th class = "heading">+</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" class="checkbox"></td>
+                <td class="brand">
+                  <img src="images/wix.png" alt="wix" class="brand-logo">
+                  <p class="brand-Name"> Wix</p>
+                </td>
+                <td class="table-Desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur magnam labore omnis impedit velit sequi deleniti reiciendis quisquam facilis eveniet nemo, laborum modi illum porro nulla saepe? Culpa facilis inventore sit illum assumenda minus pariatur natus, id nihil nulla consequuntur tempore, repellendus sint similique vel. Dolores aliquam assumenda at cupiditate.</td>
+                <td class="user-Img-Container Member">
+                  <img class="user1 userImg" src="images/user.png" alt="User1">
+                  <img class="user2 userImg" src="images/user.png" alt="User2">
+                  <img class="user3 userImg" src="images/user.png" alt="User3">
+                  <img class="user4 userImg" src="images/user.png" alt="User4">
+
+                </td>
+                <td class="table-category-head">
+                  <p class="table-category" id="Automation">Automation</p>
+                </td>
+                <td id="tag-head" class="Head-tag">
+                  <p class="tag" id="DigitalTransformation">#DigitalTransformation</p>
+                  <p class="tag" id="Creativity">#Creativity</p>
+                </td>
+                <td>
+                  <p class="time" id="today">in 30 minutes</p>
+                </td>
+                <td></td>
+              </tr>
+
+
+
+              <tr>
+                <td><input type="checkbox" class="checkbox"></td>
+                <td class="brand">
+                  <img src="images/shopify.webp" alt="wix" class="brand-logo">
+                  <p class="brand-Name"> Shopify</p>
+                </td>
+                <td class="table-Desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea expedita eveniet velit officiis, debitis laudantium corporis itaque ipsam quia quis culpa nulla modi veniam tenetur rem dicta doloremque labore. Aspernatur sit error excepturi nostrum saepe ea maiores quaerat possimus. Debitis sequi ipsum harum minima deleniti perspiciatis iste rem consectetur vitae.</td>
+                <td class="user-Img-Container Member">
+                  <img class="user1 userImg" src="images/user.png" alt="User1">
+                  <img class="user2 userImg" src="images/user.png" alt="User2">
+                  <img class="user3 userImg" src="images/user.png" alt="User3">
+                </td>
+                <td class="table-category-head">
+                  <p class="table-category" id="E-Commerce">E-Commerce</p>
+                  <p class="table-category" id="Publishing">Publishing</p>
+                </td>
+                <td id="tag-head">
+                  <p class="tag" id="DigitalTransformation">#DigitalTransformation</p>
+                  <p class="tag" id="Creativity">#Creativity</p>
+                </td>
+                <td>
+                  <p class="time" id="tommorow">Tommorow</p>
+                </td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td><input type="checkbox" class="checkbox"></td>
+                <td class="brand">
+                  <img src="images/mailChimp.webp" alt="Mail Chimp" class="brand-logo">
+                  <p class="brand-Name"> MailChimp</p>
+                </td>
+                <td class="table-Desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias nulla iusto maxime! Impedit atque repellendus, dolorum doloribus ducimus illo distinctio repudiandae! Fugit voluptatem, neque at doloribus placeat ea consequatur fugiat, ratione laborum, nam distinctio beatae explicabo? Ab deleniti ea dolor maiores beatae quis, harum voluptatem atque est, adipisci doloremque voluptatum?</td>
+                <td class="user-Img-Container Member">
+                  <img class="user1 userImg" src="images/user.png" alt="User1">
+                  <img class="user2 userImg" src="images/user.png" alt="User2">
+                  <img class="user3 userImg" src="images/user.png" alt="User3">
+                  <img class="user4 userImg" src="images/user.png" alt="User4">
+                  <img class="user5 userImg" src="images/user.png" alt="User5">
+                </td>
+                <td class="table-category-head">
+                  <p class="table-category" id="Automation">Automation</p>
+                </td>
+                <td id="tag-head">
+                  <p class="tag" id = "#omnisend">#omnisend</p>
+                  <p class="tag" id = "#DripMarketing">#DripMarketing</p>
+                </td>
+                <td>
+                  <p class="time" id="tommorow">Tommorow</p>
+                </td>
+                <td></td>
+              </tr>
+
+
+
+              <tr>
+                <td><input type="checkbox" class="checkbox"></td>
+                <td class="brand">
+                  <img src="images/PayPal.png" alt="Pay Pal" class="brand-logo">
+                  <p class="brand-Name"> PayPal</p>
+                </td>
+                <td class="table-Desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laudantium porro aut quae, ut molestiae doloribus voluptates quisquam illum commodi! Distinctio sed temporibus atque nulla, vel saepe beatae dolorum facilis molestiae fuga fugiat qui. Iusto, dolore esse nulla suscipit incidunt fugit porro tempore eveniet, recusandae, architecto autem deserunt iste officiis.</td>
+                <td class="user-Img-Container Member">
+                  <img class="user1 userImg" src="images/user.png" alt="User1">
+                  <img class="user2 userImg" src="images/user.png" alt="User2">
+                  <img class="user3 userImg" src="images/user.png" alt="User3">
+                  <img class="user4 userImg" src="images/user.png" alt="User4">
+                  <img class="user5 userImg" src="images/user.png" alt="User5">
+                  <img class="user6 userImg" src="images/user.png" alt="User6">
+                </td>
+                <td class="table-category-head">
+                  <p class="table-category" id="Marketplace">Marketplace</p>
+                </td>
+                <td id="tag-head">
+                  <p class="tag" id = "#BuySellOnline">#BuySellOnline</p>
+                  <p class="tag" id = "#Payment">#Payment</p>
+                </td>
+                <td>
+                  <p class="time" id="today">in 6 Hours</p>
+                </td>
+                <td></td>
+              </tr>
+
+
+              <tr>
+                <td><input type="checkbox" class="checkbox"></td>
+                <td class="brand">
+                  <img src="images/k-rite.webp" alt="K-RITE" class="brand-logo">
+                  <p class="brand-Name"> K-RITE</p>
+                </td>
+                <td class="table-Desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odit velit laborum corrupti voluptas asperiores harum vitae perspiciatis, voluptatem voluptate, quisquam error quis sit eius veritatis optio cupiditate. Nostrum est deserunt amet quibusdam mollitia ut sunt possimus exercitationem qui enim. Nam dicta ipsam eligendi vitae, ducimus vero blanditiis eveniet officiis.</td>
+                <td class="user-Img-Container Member">
+                  <img class="user1 userImg" src="images/user.png" alt="User1">
+                  <img class="user2 userImg" src="images/user.png" alt="User2">
+                  <img class="user3 userImg" src="images/user.png" alt="User3">
+                  <img class="user4 userImg" src="images/user.png" alt="User4">
+                  <img class="user5 userImg" src="images/user.png" alt="User5">
+                  <img class="user6 userImg" src="images/user.png" alt="User6">
+                </td>
+                <td class="table-category-head">
+                  <p class="table-category" id="Publishing">Publishing</p>
+                  <p class="table-category" id="b2c">B2C</p>
+                </td>
+                <td id="tag-head">
+                  <p class="tag">#RentelIT</p>
+                  <p class="tag">#B2CMarket</p>
+                </td>
+                <td>
+                  <p class="time" id="Next-Month">Next Month</p>
+                </td>
+                <td></td>
+              </tr>
+
+
+              <tr>
+                <td><input type="checkbox" class="checkbox"></td>
+                <td class="brand">
+                  <img src="images/Disney.webp" alt="Disney" class="brand-logo">
+                  <p class="brand-Name"> Disney</p>
+                </td>
+                <td class="table-Desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab velit aut ullam consequuntur ea enim. Officia, saepe dignissimos totam facilis iure sapiente beatae quod voluptate non enim laboriosam ipsum ratione esse, temporibus et sint facere libero dolorum nemo officiis sunt quo nam recusandae magni. Ullam beatae officiis nulla expedita modi.</td>
+                <td class="user-Img-Container Member">
+                  <img class="user1 userImg" src="images/user.png" alt="User1">
+                  <img class="user2 userImg" src="images/user.png" alt="User2">
+
+                </td>
+                <td class="table-category-head">
+                  <p class="table-category" id="b2b">B2B</p>
+                  <p class="table-category" id="b2c">B2C</p>
+                </td>
+                <td id="tag-head">
+                  <p class="tag">#BuySellOnline</p>
+                  <p class="tag">#Payment</p>
+                </td>
+                <td>
+                  <p class="time">in 6 Hours</p>
+                </td>
+                <td></td>
+              </tr>
+
+
+              <tr>
+                <td><input type="checkbox" class="checkbox"></td>
+                <td class="brand">
+                  <img src="images/google.webp" alt="google" class="brand-logo">
+                  <p class="brand-Name"> Google</p>
+                </td>
+                <td class="table-Desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatibus quasi unde, vitae autem tenetur eos magnam neque omnis adipisci aut eaque, voluptatem, magni quis ab laboriosam culpa explicabo? Voluptate accusantium, maiores mollitia rem vel debitis, culpa cumque, porro unde suscipit a quas omnis qui magnam fuga iste perspiciatis nesciunt!</td>
+                <td class="user-Img-Container Member">
+                  <img class="user1 userImg" src="images/user.png" alt="User1">
+                  <img class="user2 userImg" src="images/user.png" alt="User2">
+                  <img class="user3 userImg" src="images/user.png" alt="User3">
+                  <img class="user4 userImg" src="images/user.png" alt="User4">
+                  <img class="user5 userImg" src="images/user.png" alt="User5">
+                </td>
+                <td class="table-category-head">
+                  <p class="table-category" id="Finance">Finance</p>
+                  <p class="table-category" id="Automation">Automation</p>
+                </td>
+                <td id="tag-head">
+                  <p class="tag">#SerchFinance</p>
+                  <p class="tag">#Workspace</p>
+                </td>
+                <td>
+                  <p class="time" id="today">in 30 minutes</p>
+                </td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td><input type="checkbox" class="checkbox"></td>
+                <td class="brand">
+                  <img src="images/Microsoft.webp" alt="Microsoft" class="brand-logo">
+                  <p class="brand-Name"> Microsoft</p>
+                </td>
+                <td class="table-Desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem necessitatibus provident commodi soluta consectetur quaerat beatae, vitae minima tempore, at et neque eius deleniti quibusdam! Accusantium magnam minima unde nostrum possimus, pariatur, facere aliquam recusandae, aspernatur iusto temporibus? Aperiam, quaerat maxime quam nemo recusandae veniam suscipit! Neque laudantium suscipit molestiae?</td>
+                <td class="user-Img-Container Member">
+                  <img class="user1 userImg" src="images/user.png" alt="User1">
+                  <img class="user2 userImg" src="images/user.png" alt="User2">
+                  <img class="user3 userImg" src="images/user.png" alt="User3">
+                  <img class="user4 userImg" src="images/user.png" alt="User4">
+                  <img class="user5 userImg" src="images/user.png" alt="User5">
+                  <img class="user6 userImg" src="images/user.png" alt="User6">
+                </td>
+                <td class="table-category-head">
+                  <p class="table-category" id="Publishing">Publishing</p>
+                  <p class="table-category" id="b2c">B2C</p>
+                </td>
+                <td id="tag-head">
+                  <p class="tag">#RentelIT</p>
+                  <p class="tag">#B2CMarket</p>
+                </td>
+                <td>
+                  <p class="time" id="canceled">No Contact</p>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="checkbox"></td>
+                <td class="brand">
+                  <img src="images/Invision.png" alt="Microsoft" class="brand-logo">
+                  <p class="brand-Name"> Invision</p>
+                </td>
+                <td class="table-Desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem necessitatibus provident commodi soluta consectetur quaerat beatae, vitae minima tempore, at et neque eius deleniti quibusdam! Accusantium magnam minima unde nostrum possimus, pariatur, facere aliquam recusandae, aspernatur iusto temporibus? Aperiam, quaerat maxime quam nemo recusandae veniam suscipit! Neque laudantium suscipit molestiae?</td>
+                <td class="user-Img-Container Member">
+                  <img class="user1 userImg" src="images/user.png" alt="User1">
+                  <img class="user2 userImg" src="images/user.png" alt="User2">
+                </td>
+                <td class="table-category-head">
+                  <p class="table-category" id="WebServices">Web Services</p>
+                  <p class="table-category" id="b2c">B2C</p>
+                </td>
+                <td id="tag-head">
+                  <p class="tag">#APIIntegration</p>
+                </td>
+                <td>
+                  <p class="time" id="canceled">No Contact</p>
+                </td>
+              </tr>
+              <tr id="lastRow">
+                <td style = "text-align: right;" colspan="2">
+                  <p>Total Rows: <span id="rowCount">0</span></p>
+                  <button onclick="addCalculation()">+ Add Calculation</button>
+                </td>
+                <td class = "lighted">+Add Calculation</td>
+                <td class = "lighted">+Add Calculation</td>
+                <td class = "lighted">+Add Calculation</td>
+                <td class = "lighted">+Add Calculation</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class = "btn-container">
+          <div class="bottom-btn">
+            <div class = "cntContainer">
+              <span id = "selectedCount"> 0 </span>
+              <span> selected</span>
+            </div>
+            <button><i class="fa-solid fa-box-archive"></i> Archive</button>
+            <button id="Delete"><i class="fa-solid fa-trash"></i> Delete</button>
+            <button>More <i class="fa-solid fa-caret-down"></i></button>
+            <button style = "height: 20px; align-self:center; padding: 0 7 15 7;">x</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="https://kit.fontawesome.com/bc9b33b205.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
